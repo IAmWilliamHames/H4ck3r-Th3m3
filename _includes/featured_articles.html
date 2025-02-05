@@ -1,0 +1,13 @@
+<div class="featured-articles">
+    {% if site.data.featured_articles %}
+        {% for article in site.data.featured_articles limit:2 %}
+        <div class="blog-post">
+            <h3 class="glitch" data-text="{{ article.title }}">{{ article.title }}</h3>
+            <p>{{ article.excerpt }}</p>
+            <a href="{{ article.url | relative_url }}" class="glitch-link" data-text="Read More">Read More</a>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>No featured articles found. Check _data/featured_articles.yml</p>
+    {% endif %}
+</div>

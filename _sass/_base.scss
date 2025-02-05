@@ -1,0 +1,55 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #e0ffe0;  // Very light green, close to white
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0f0;  // Keep headers bright green
+    text-shadow: 2px 2px #00f;
+}
+
+a {
+    color: #0f0;  // Keep links bright green
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #fff;
+}
+
+// Ensure button text remains bright green
+.glitch-link {
+    color: #0f0;
+}
+
+// Add any other specific elements that should remain bright green here
+// For example, if you have navigation items that should stay green:
+nav ul li a {
+    color: #0f0;
+}
+
+// Keep the glitch effect text bright green
+.glitch::before,
+.glitch::after {
+    color: #0f0;
+}
+
+// Improve readability for larger text blocks
+p, ul, ol {
+    color: #e0ffe0;  // Very light green, close to white
+    text-shadow: 0 0 2px rgba(0, 255, 0, 0.1);  // Subtle green glow
+}
+
+// Add a subtle hover effect to improve interactivity
+a:hover, .glitch-link:hover {
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);  // Brighter green glow on hover
+}
+
+// ... (rest of the base styles)

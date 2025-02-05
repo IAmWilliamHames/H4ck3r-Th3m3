@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<h1 class="glitch" data-text="Pr0j3cts">Pr0j3cts</h1>
+
+{{ content }}
+
+<div class="projects-container">
+    {% if site.projects %}
+        {% for project in site.projects %}
+        <div class="project">
+            <h3 class="glitch" data-text="{{ project.title }}">{{ project.title }}</h3>
+            <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
+            <a href="{{ project.url | relative_url }}" class="glitch-link">View Details</a>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>No projects found. Make sure you have project files in the _projects directory.</p>
+    {% endif %}
+</div>
+
+{% include pagination.html %}

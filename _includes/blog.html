@@ -1,0 +1,9 @@
+<div class="blog-container">
+    {% for post in site.posts limit:3 %}
+    <div class="blog-post">
+        <h3 class="glitch" data-text="{{ post.title }}">{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url | relative_url }}" class="glitch-link">Read More</a>
+    </div>
+    {% endfor %}
+</div>

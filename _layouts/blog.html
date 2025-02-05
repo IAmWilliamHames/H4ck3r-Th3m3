@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<h1 class="glitch" data-text="Bl0g">Bl0g</h1>
+
+{{ content }}
+
+<div class="blog-container">
+    {% if site.posts.size > 0 %}
+        {% for post in site.posts %}
+        <div class="blog-post">
+            <h3 class="glitch" data-text="{{ post.title }}">{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+            <a href="{{ post.url | relative_url }}" class="glitch-link">Read More</a>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>No blog posts found. Make sure you have post files in the _posts directory.</p>
+    {% endif %}
+</div>
+
+{% if site.posts.size > 5 %}
+    {% include pagination.html %}
+{% endif %}

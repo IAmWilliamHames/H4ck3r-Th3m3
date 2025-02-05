@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<article id="blog-post">
+    <h2 class="glitch" data-text="{{ page.title }}">{{ page.title }}</h2>
+    <p class="post-meta">Posted on: <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+    {{ content }}
+</article>

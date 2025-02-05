@@ -1,0 +1,13 @@
+I"<p>The Gl1tch Eff3ct is a core feature of the H4ck3r Th3m3, providing a unique, cyberpunk-inspired text distortion effect.</p>
+
+<h2 id="key-features">Key Features:</h2>
+<ul>
+  <li>Customizable glitch intensity</li>
+  <li>Applies to headings and selected text elements</li>
+  <li>Responsive and accessible design</li>
+  <li>Easy to implement with CSS classes</li>
+</ul>
+
+<h2 id="usage">Usage:</h2>
+<p>Add the <code class="language-plaintext highlighter-rouge">glitch</code> class to any text element you want to apply the effect to:</p>
+:ET

@@ -1,0 +1,20 @@
+{% assign technologies = "Kali Linux,Metasploit,Wireshark,Nmap,Burp Suite,John the Ripper,Aircrack-ng,Snort,OpenVAS,Maltego" | split: "," %}
+{% assign random_tech = technologies | sample %}
+
+<div class="featured-tech-box">
+    <h3 class="glitch" data-text="{{ random_tech }}">{{ random_tech }}</h3>
+    <p>{{ random_tech }} is a powerful tool in the hacker's arsenal. It's used for {% case random_tech %}
+        {% when "Kali Linux" %}penetration testing and digital forensics.
+        {% when "Metasploit" %}developing and executing exploit code against a remote target machine.
+        {% when "Wireshark" %}network protocol analysis and troubleshooting.
+        {% when "Nmap" %}network discovery and security auditing.
+        {% when "Burp Suite" %}web application security testing.
+        {% when "John the Ripper" %}password cracking and security auditing.
+        {% when "Aircrack-ng" %}assessing WiFi network security.
+        {% when "Snort" %}real-time traffic analysis and packet logging on IP networks.
+        {% when "OpenVAS" %}vulnerability scanning and management.
+        {% when "Maltego" %}open-source intelligence and forensics.
+        {% else %}various cybersecurity tasks and ethical hacking operations.
+    {% endcase %}</p>
+    <a href="https://www.google.com/search?q={{ random_tech | url_encode }}+cybersecurity+tool" class="glitch-link" target="_blank" rel="noopener noreferrer">Learn More</a>
+</div>

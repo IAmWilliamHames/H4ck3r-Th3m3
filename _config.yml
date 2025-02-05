@@ -1,0 +1,34 @@
+title: H4ck3r P0rtf0li0
+description: A hacker-themed Jekyll portfolio theme
+baseurl: '/'
+url: 'https://iamwilliamhames.github.io/H4ck3r-Th3m3/'
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+paginate: 6
+paginate_path: '/blog/page:num/'
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+permalink: /blog/:year/:month/:day/:title/
