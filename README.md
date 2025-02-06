@@ -42,7 +42,7 @@ The theme is available as open source under the terms of the [MIT License](https
 
 H4ck3r Th3m3 was created by [@IAmWilliamHames](https://github.com/IAmWilliamHames) and is maintained by the open-source community.
 
-## Screen Shots
+## Screenshots
 
 ![image](assets/images/featured-projects.png)
 ![image](assets/images/posts.png)
