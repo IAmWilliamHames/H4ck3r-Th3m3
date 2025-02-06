@@ -1,3 +1,5 @@
+![image](assets/images/hero.png)
+
 # H4ck3r Th3m3
 
 H4ck3r Th3m3 is a cutting-edge Jekyll theme designed for cybersecurity enthusiasts, ethical hackers, and tech aficionados. It embodies the spirit of the digital underground, immersing visitors in a world of code, security, and digital exploration.
@@ -39,3 +41,12 @@ The theme is available as open source under the terms of the [MIT License](https
 ## Credits
 
 H4ck3r Th3m3 was created by [@IAmWilliamHames](https://github.com/IAmWilliamHames) and is maintained by the open-source community.
+
+## Screen Shots
+
+![image](assets/images/featured-projects.png)
+![image](assets/images/posts.png)
+![image](assets/images/about.png)
+![image](assets/images/projects.png)
+![image](assets/images/contact.png)
+![image](assets/images/footer.png)
